@@ -1,0 +1,15 @@
+<table border="1">
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let user of usuarios">
+    <td>
+      {{user.nome}}
+    </td>
+    <td>
+      {{user.email}}
+    </td>
+  </tr>
+</table>
+<button routerLink="add">Adicionar novo</button>
